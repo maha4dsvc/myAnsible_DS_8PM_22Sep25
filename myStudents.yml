@@ -1,0 +1,27 @@
+---
+- myStudents:
+  - name: Alice Johnson
+    age: 20
+    major: Computer Science
+    gpa: 3.8
+    courses:
+          - Data Structures
+          - Algorithms
+          - Operating Systems
+  - name: Bob Smith
+    age: 22
+    major: Mathematics
+    gpa: 3.6
+    courses:
+         - Calculus
+         - Linear Algebra
+         - Statistics
+  - name: Carol White
+    age: 21
+    major: Physics
+    gpa: 3.9
+    courses:
+     - Quantum Mechanics
+     - Electromagnetism
+     - Thermodynamics
+ 
