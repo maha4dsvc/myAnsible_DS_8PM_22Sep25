@@ -14,5 +14,9 @@
         name: apache2 
         state: started
     when: ansible_os_family == "Debian"
-    
 
+  - name: install httpd on redhat nodes
+    dnf:
+        name: httpd
+        state: present
+    when: ansible_os_family == "RedHat"
