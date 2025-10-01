@@ -15,10 +15,17 @@
     template:
          src: myindex.j2
          dest: /var/www/html/index.html
+    notify: restartwebserver
+    
   - name: i want to download internet file
     get_url:
        url: https://github.com/maha4dsvc/mahalogin/blob/master/target/mahaLogin-2.0.war
        dest: /home/maha/mahaLogin-2.0.war
        force_basic_auth: yes
 
+  handlers:
+  - name: restartwebserver
+    service:
+       name: apache2
+       state: started
 
