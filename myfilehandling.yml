@@ -3,3 +3,12 @@
   become: yes
   tasks:
   - include_tasks: myfile.yml
+  - name: copy text file into node side
+    copy:
+       src: mytest
+       dest: home/maha/mytest
+  - name: install apache2 webserver 
+    apt:
+      name: apache2
+      state: present
+      
